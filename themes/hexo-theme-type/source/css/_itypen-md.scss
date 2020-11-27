@@ -1,0 +1,152 @@
+p {
+  margin: 1.5em 0px !important;
+  font-size: 16px;
+  color: #222831;
+  line-height: 1.8em;
+  letter-spacing: 0;
+  font-family: "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/*
+文字避头尾法则
+aiokr learn from https://blog.csdn.net/qq_23375733/article/details/99975659
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  table-layout: fixed !important;
+  /*文字避首尾 -- 防止撑开*/
+  word-wrap: break-word !important;
+  /*英文单字因自动换行*/
+  word-break: normal !important;
+  /*正常避头尾 */
+  /*text-align: justify !important;*/
+  /*文字左右对齐*/
+  text-justify: inter-ideograph !important;
+  /*用表意文本来排齐内容*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-style: bold !important;
+  color: #222831 !important;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+  text-align: left !important;
+  font-family: sans-serif;
+  font-weight: bold
+}
+
+h1 {
+  font-size: 24px !important;
+  text-align: left !important;
+}
+
+h2 {
+  font-size: 22px !important;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+blockquote {
+  padding: 0 48px 0 60px;
+  margin: 1.5em 0px !important;
+  quotes: none;
+
+  p {
+    color: $grey;
+  }
+}
+
+blockquote::before,
+.stressed-quote::before {
+  content: "\201C";
+  display: block;
+  font-family: times;
+  font-style: normal;
+  font-size: 48px;
+  color: $grey;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: -50px;
+  position: absolute;
+}
+
+mark {
+  margin: 0 5px;
+  padding: 2px 4px;
+  border-bottom: 1px solid #ffedce;
+  background: #fffdd1;
+}
+
+.right {
+  @media screen and (max-width: 768px) {
+    vertical-align: middle;
+    text-align: center
+  }
+
+  @media screen and (min-width: 768px) {
+    float: right;
+    padding: 15px;
+  }
+
+  @media print {
+    float: right;
+    padding: 15px;
+  }
+}
+
+.left {
+  @media screen and (max-width: 768px) {
+    vertical-align: middle;
+    text-align: center
+  }
+
+  @media screen and (min-width: 768px) {
+    float: left;
+    padding: 15px;
+  }
+
+  @media print {
+    float: left;
+    padding: 15px;
+  }
+}
+
+ol li {
+  margin: 1.5em 0px !important;
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0;
+}
+
+.footnotelist ol li {
+  span {
+    display: contents !important;
+  }
+}

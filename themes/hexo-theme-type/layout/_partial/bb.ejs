@@ -1,0 +1,75 @@
+<% if (page.layout == 'bb') { %>
+<div class="mybox m1 mb2"style="width: 100%;max-width: 800px;text-align: left;padding: 20px 20px 40px;margin: 40px auto;">
+    <div class="Post_content_box">
+     
+      <style>
+        @font-face {
+          font-family: "iconfont";
+          src: url('//at.alicdn.com/t/font_1755564_z4mhxbw13mq.eot?t=1586882866168');
+          /* IE9 */
+          src: url('//at.alicdn.com/t/font_1755564_z4mhxbw13mq.eot?t=1586882866168#iefix') format('embedded-opentype'),
+            /* IE6-IE8 */
+            url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALcAAsAAAAAB2gAAAKPAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCfgqCUII8ATYCJAMMCwgABCAFhG0HQBuEBsiuMRkynL4YFCHtLKs4b+k7/80U8DwHIB6+xtr7u3vniDZI6tmnkyDS8NC5iFgJlE7pTPcO8e5b+803aYQy8YtH1JPKyZzY3ttb1EonioVGSBAiRJp4JV9cFppCxLpe2z8sUs37O4QEDFRM0lFeAw4XN6bQPG06zTG8DRwHFOBeGEVWIjE+mP8wduVFPCbQNK4ktN8/OgFJhbEqEFemLkEyFVcUVqoL1ZKDRbyIqafb9AA8+9+PX41IklQyY+PBSZ8KnR+9iBx0OxZcp8PxvGDHyFgACnFY6j8QCfMLIppKPmoCrGtW8OG/y0eufLX/8AiJqDKa22AGWpMzUth6p6aARySQQRUUL4AnSBmuyvIwPdbz21OX5ybO5duOJifaLl6cvkrd1HR7kWEy6yikff29PvgO17V/Tf/9f/oN3PDqz22a719IYlZJHQetpLY08MV6fwFDrF0B6F4XyB3/FyEEnZnU2XGtVwHvpxtA1d6pftKB4AcoWo4U1QQbiiy35Xow27whbwK2NNFlhAc99zeOtM4S6ikFQ1IzhqxuglAoC6ho2UBV3Raa5g0cbxnCRURpYM4pQOh3h6TXG7J+j4RCeULFqFdU9UcETYfRdGHLVJjpHk6SIBXlTTQV5mmWS6SD1jHSVx2JJ1U+a4p4YKawvrSSLQ2QR3yMLcGa3hBCQ40zF/vBc+Q4DH3OLFJExRDCb64un5S9qaIwF9L2cEQiEBWSbUImBePR3PFCOvf5MUS3yiHhNR0VySmEC5jTo7qKWgvCgN5r1XEtrwTW6BoEQYM0HONC/cBLHDPPIL98noUohAqjR7uvWVV1HlVbfWV+o/t8J6DJOJ4jRY6idmVKnmVS1q8tK8zfBAAA') format('woff2'),
+            url('//at.alicdn.com/t/font_1755564_z4mhxbw13mq.woff?t=1586882866168') format('woff'),
+            url('//at.alicdn.com/t/font_1755564_z4mhxbw13mq.ttf?t=1586882866168') format('truetype'),
+            /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+            url('//at.alicdn.com/t/font_1755564_z4mhxbw13mq.svg?t=1586882866168#iconfont') format('svg');
+          /* iOS 4.1- */
+        }
+     
+        .iconfont {
+          font-family: "iconfont" !important;
+          font-size: 14px;
+          font-style: normal;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+     
+        .icon-lianjie:before {
+          content: "\e6a3";
+        }
+     
+        .icon-lianjie-copy:before {
+          content: "\e6a4";
+        }  
+        .timenode{position:relative}
+        div.timenode:after,div.timenode:before{content:'';z-index:1;position:absolute;background:rgba(68,215,182,.5);width:2px;left:7px}div.timenode:before{top:0;height:6px;}
+        div.timenode:after{top:26px;height:calc(100% - 26px)}
+        div.timenode:last-child:after{height:calc(100% - 26px - 16px);border-bottom-left-radius:2px;border-bottom-right-radius:2px}
+        div.timenode .body,div.timenode .meta{max-width:calc(100% - 24px)}
+        div.timenode .meta{position:relative;color:var(--color-meta);font-size:.875rem;line-height:32px;height:32px}
+        div.timenode .meta:after,div.timenode .meta:before{content:'';position:absolute;top:8px;z-index:2}
+        div.timenode .meta:before{background:rgba(68,215,182,.5);width:16px;height:16px;border-radius:8px}
+        div.timenode .meta:after{background:#44d7b6;margin-left:2px;margin-top:2px;width:12px;height:12px;border-radius:6px;transform:scale(.5);transition:all .28s ease;-moz-transition:all .28s ease;-webkit-transition:all .28s ease;-o-transition:all .28s ease}
+        div.timenode .meta p{font-weight:700;margin:0 0 0 24px}
+        div.timenode .body{margin:0 0 0 24px;padding:16px;border-radius:8px;background:#f6f6f6;display:inline-block}
+        div.timenode .body:empty{display:none}
+        div.timenode .body>:first-child{margin-top:.25em}
+        div.timenode .body>:last-child{margin-bottom:.25em}
+        div.timenode .body .highlight{border:1px solid #e4e4e4}div.timenode:hover .meta{color:var(--color-text)}
+        div.timenode:hover .meta:before{background:rgba(255,87,34,.5)}
+        div.timenode:hover .meta:after{background:#ff5722;transform:scale(1)}article#arc .timenode:after,article#arc .timenode:before{margin-left:12px}article#arc .timenode .meta{padding:6px 0;line-height:1.5;height:auto;max-width:100%;display:flex;font-size:.9375rem;font-weight:500;border-radius:2px;color:var(--color-list)}article#arc .timenode .meta:before{display:none}article#arc .timenode .meta:after{margin-left:14px}article#arc .timenode .meta:hover{color:#00947e;background:#f4f4f4}article#arc .timenode .meta time{color:var(--color-meta);margin-left:34px;margin-right:16px;flex-shrink:0}article#arc .timenode .meta i{line-height:1.5;color:#ff5722}article#arc .timenode .meta i.red{color:#fe5f58}article#arc .timenode .meta i.green{color:#3dc550}article#arc .timenode .meta i.yellow{color:#ffbd2b}article#arc .timenode .meta i.blue{color:#1bcdfc}article#arc .timenode .meta i.theme{color:#44d7b6}article#arc .timenode .meta i.accent{color:#ff5722}article#arc .timenode .meta i.orange{color:#ff5722}article#tag .all-tags ul{margin:0 -8px;padding:0;display:flex;flex-wrap:wrap}article#tag .all-tags ul li{list-style:none;margin:8px;border-radius:4px;overflow:hidden;display:flex;position:relative;font-size:.9375rem}article#tag .all-tags ul li a{display:inline-block;padding:4px 52px 4px 16px;font-weight:500}article#tag .all-tags ul li a:hover{background:#ff5722;color:#fff}article#tag .all-tags ul li span{color:var(--color-meta);background:#fff;padding:2px 8px;border-radius:2px;pointer-events:none;position:absolute;right:2px;top:2px;height:calc(100% - 4px)}article#tag .all-tags ul li span:before{content:'x'}.tagred{background:#feecf0;color:#cc0f35}.tagyellow{background:#f4e9ff;color:#8a51c0}.tagblue{background:#eef3fc;color:#2160c4}.taggreen{background:#ebfffc;color:#00947e}.tagpurple{background:#f4e9ff;color:#8a51c0}.taggrown{background:#fffbeb;color:#947600}
+      </style>
+      <main id="app">
+        <p class="tip" style="padding: 1.2rem">至今为止总共BB了 {{count}} 条废话📑</p>
+
+        
+        <div class="timenode" v-for="item in contents" v-cloak >
+          
+          <div class="meta">
+          <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+          </div>
+       
+          <div class="body" style="font-size: 14px;line-height: 1.5rem; color: rgba(0,0,0,0.75);" >
+            <p v-html='item.attributes.content'></p>
+          </div>
+        </div>
+      </main>
+      <br />
+      <br />
+      <article id="Post_wysiwyg" class="duta">
+          <article class="message lv" style="background-color: #ebfffc;">
+          <div class="message_body" style="	border-color: #00947e; border-radius: 4px; border-style: solid; border-width: 0 0 0 4px; color: #4a4a4a; padding: 1.25em 1.5em; word-break: break-all;";>
+          <p>此说说通过手机微信发出，主要记录我的碎片化思考和动态。</p>
+          <p>此页面最多显示10条说说，完整版请移步到👉🏼<a target="_blank" rel="noopener" href="https://b.cssj.fun/">琛苏的自言堂</a></p></article></div>
+      <% } %>

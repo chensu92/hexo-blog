@@ -1,0 +1,9 @@
+<% var toc = toc(page.content, {
+  class: 'itp-toc',
+  list_number: false,
+}) %>
+<% if(toc.length > 0) { %>
+<div id="toc" class="noprn nodisplay">
+  <%-(toc) %>
+</div>
+<% } %>
